@@ -41,7 +41,7 @@ module.exports = {
             })
         
         if(email == user.email  && password == user.password){
-            const token = jwt.sigin(user.id)
+            const token = jwt.signin(user.id)
             return res.status(200).json({token});
         }
         
